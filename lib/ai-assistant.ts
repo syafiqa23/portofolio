@@ -25,7 +25,7 @@ export function generateAIResponse(userPrompt: string): {
     query.match(/^(halo|hai|hi|hello|hey|hei|pagi|siang|sore|malam|assalamualaikum|permisi)/i)
   ) {
     return {
-      reply: `Halo, saya **Syasya Chat AI**, asisten virtual cerdas portofolio Syafiqa Zahroo. Saya siap membantu Anda menemukan informasi seputar:\n\n• **Curriculum Vitae (CV)**: Resume resmi terverifikasi dengan opsi cetak / PDF\n• **Latar Belakang & Profil**: Mahasiswi Teknik Informatika UDINUS (IPK 3.75)\n• **Proyek Perangkat Lunak**: Web full-stack, backend APIs (SafeWash, SmartLMS, Blangkis Store, Forest Dessert)\n• **Machine Learning**: Platform Peatland & Computer Vision\n• **Sertifikasi**: Spesialisasi IBM AI Engineering & DevOps\n• **Kontak**: Email, WhatsApp/Telepon, LinkedIn, dan GitHub\n\nAda hal spesifik yang ingin Anda tanyakan?`,
+      reply: `Halo, saya **Syasya Chat AI**, asisten virtual cerdas portofolio Syafiqa Zahroo. Saya siap membantu Anda menemukan informasi seputar:\n\n• **Curriculum Vitae (CV)**: Resume resmi terverifikasi dengan opsi cetak / PDF\n• **Latar Belakang & Profil**: Mahasiswi Teknik Informatika UDINUS (IPK 3.79)\n• **Proyek Perangkat Lunak**: Web full-stack, backend APIs (SafeWash, SmartLMS, Blangkis Store, Forest Dessert)\n• **Machine Learning**: Platform Peatland & Computer Vision\n• **Sertifikasi**: Spesialisasi IBM AI Engineering & DevOps\n• **Kontak**: Email, WhatsApp/Telepon, LinkedIn, dan GitHub\n\nAda hal spesifik yang ingin Anda tanyakan?`,
       suggestedQuestions: [
         "Lihat Curriculum Vitae (CV) Syafiqa",
         "Ceritakan tentang profil Syafiqa",
@@ -45,7 +45,7 @@ export function generateAIResponse(userPrompt: string): {
     query.includes("cetak cv")
   ) {
     return {
-      reply: `**Curriculum Vitae (CV) Resmi Syafiqa Zahroo:**\n\n• **Nama:** Syafiqa Zahroo\n• **Domisili:** Semarang, Indonesia\n• **Kontak:** 085246232785 | zahroosyafiqa@gmail.com\n• **Pendidikan:** S1 Teknik Informatika UDINUS (Semester 6, IPK 3.75 / 4.00)\n• **Ringkasan:** Berpengalaman mengembangkan aplikasi web, backend architecture (Laravel, Django, CodeIgniter), dan solusi Machine Learning (PyTorch, Streamlit, EfficientNet, Grad-CAM).\n• **Sertifikasi:** IBM AI Engineering Specialization (2026), IBM DevOps & Software Engineering (2026), serta rangkaian sertifikasi IBM Supervised ML.\n\n📄 **Download / Buka File CV Resmi:**\nAnda dapat membuka atau mengunduh langsung file PDF asli dengan mengklik tombol **"Curriculum Vitae (PDF)"** di bagian Hero, tombol **"CV"** di Navbar, atau langsung klik tautan berikut: [📄 Buka File PDF CV Syafiqa Zahroo](/cv-syafiqa-zahroo.pdf).`,
+      reply: `**Curriculum Vitae (CV) Resmi Syafiqa Zahroo:**\n\n• **Nama:** Syafiqa Zahroo\n• **Domisili:** Semarang, Indonesia\n• **Kontak:** 085246232785 | zahroosyafiqa@gmail.com\n• **Pendidikan:** S1 Teknik Informatika UDINUS (Semester 6, IPK 3.79 / 4.00)\n• **Ringkasan:** Berpengalaman mengembangkan aplikasi web, backend architecture (Laravel, Django, CodeIgniter), dan solusi Machine Learning (PyTorch, Streamlit, EfficientNet, Grad-CAM).\n• **Sertifikasi:** IBM AI Engineering Specialization (2026), IBM DevOps & Software Engineering (2026), serta rangkaian sertifikasi IBM Supervised ML.\n\n📄 **Download / Buka File CV Resmi:**\nAnda dapat membuka atau mengunduh langsung file PDF asli dengan mengklik tombol **"Curriculum Vitae (PDF)"** di bagian Hero, tombol **"CV"** di Navbar, atau langsung klik tautan berikut: [📄 Buka File PDF CV Syafiqa Zahroo](/cv-syafiqa-zahroo.pdf).`,
       suggestedQuestions: [
         "Ceritakan tentang project SafeWash",
         "Apa tech stack backend yang dikuasai?",
@@ -155,9 +155,8 @@ export function generateAIResponse(userPrompt: string): {
 
   if (matchedProject) {
     return {
-      reply: `**Detail Proyek: ${matchedProject.title}**\n\n• **Kategori:** ${matchedProject.category}\n• **Subjudul:** ${matchedProject.subtitle}\n• **Tech Stack:** ${matchedProject.techStack.join(", ")}\n\n**Ringkasan:**\n${matchedProject.overview}\n\n**Fitur & Solusi:**\n${matchedProject.keyFeatures.map((f) => `• ${f}`).join("\n")}${
-        matchedProject.liveDemoUrl ? `\n\n**Live Demo:** ${matchedProject.liveDemoUrl}` : ""
-      }${matchedProject.githubUrl ? `\n**GitHub:** ${matchedProject.githubUrl}` : ""}`,
+      reply: `**Detail Proyek: ${matchedProject.title}**\n\n• **Kategori:** ${matchedProject.category}\n• **Subjudul:** ${matchedProject.subtitle}\n• **Tech Stack:** ${matchedProject.techStack.join(", ")}\n\n**Ringkasan:**\n${matchedProject.overview}\n\n**Fitur & Solusi:**\n${matchedProject.keyFeatures.map((f) => `• ${f}`).join("\n")}${matchedProject.liveDemoUrl ? `\n\n**Live Demo:** ${matchedProject.liveDemoUrl}` : ""
+        }${matchedProject.githubUrl ? `\n**GitHub:** ${matchedProject.githubUrl}` : ""}`,
       suggestedQuestions: ["Lihat project lainnya", "Tech stack apa saja yang dikuasai?"],
     };
   }

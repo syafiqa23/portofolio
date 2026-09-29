@@ -16,7 +16,7 @@ export const educationData: EducationItem[] = [
     degree: "S1 Teknik Informatika",
     period: "2023 — Present",
     semester: "Semester 6",
-    gpa: "GPA 3.75 / 4.00",
+    gpa: "GPA 3.79 / 4.00",
     description:
       "Focusing on Software Engineering, Database Systems, Web Development, Algorithms, Machine Learning, and Computer Vision.",
     badge: "Active Student",

@@ -25,7 +25,7 @@ export const profileData: ProfileData = {
   subheadline:
     "Informatics Engineering student passionate about crafting reliable web applications, robust backend architectures, and intelligent machine learning solutions.",
   aboutNarrative:
-    "Currently pursuing my degree in Informatics Engineering at Universitas Dian Nuswantoro (Semester 6, GPA 3.75/4.00), I focus on engineering maintainable, high-performance software systems and exploring practical data-driven intelligence. My experience spans building REST APIs and containerized backends with Laravel and Django, crafting modern interactive interfaces with Next.js and React, and researching computer vision architectures like Explainable AI (Grad-CAM).",
+    "Currently pursuing my degree in Informatics Engineering at Universitas Dian Nuswantoro (Semester 6, GPA 3.79/4.00), I focus on engineering maintainable, high-performance software systems and exploring practical data-driven intelligence. My experience spans building REST APIs and containerized backends with Laravel and Django, crafting modern interactive interfaces with Next.js and React, and researching computer vision architectures like Explainable AI (Grad-CAM).",
   statusBadge: "currently building things with code ✦",
   location: "Semarang, Indonesia",
   phone: "085246232785",
