@@ -28,11 +28,11 @@ export function About() {
                 </div>
                 <div className="flex justify-between items-center gap-2">
                   <span className="text-[#686868]">Major</span>
-                  <span className="text-[#252525] font-medium">Informatics Eng.</span>
+                  <span className="text-[#252525] font-medium">Informatics Engineering</span>
                 </div>
                 <div className="flex justify-between items-center gap-2">
                   <span className="text-[#686868]">Standing</span>
-                  <span className="text-[#252525] font-medium">Semester 6 · GPA 3.79</span>
+                  <span className="text-[#252525] font-medium">Semester 7 · GPA 3.79</span>
                 </div>
                 <div className="flex justify-between items-center pt-2 border-t border-[#E7E0D8]">
                   <span className="text-[#686868]">Focus</span>

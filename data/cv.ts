@@ -169,7 +169,7 @@ export const cvData: CVData = {
     degree: "S1 Teknik Informatika",
     institution: "Universitas Dian Nuswantoro (UDINUS)",
     period: "2023 – Sekarang",
-    semester: "Semester 6",
+    semester: "Semester 7",
     gpa: "IPK 3.79 / 4.00",
   },
 };

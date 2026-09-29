@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, FileText } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { name: "About", href: "#about" },
@@ -77,33 +77,10 @@ export function Navbar() {
               </a>
             ))}
           </nav>
-
-          {/* Direct CV PDF Button in Desktop Navbar */}
-          <a
-            href="/cv-syafiqa-zahroo.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Buka File CV PDF Syafiqa Zahroo"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#F8D8C8] hover:bg-[#F5C6B1] text-[#252525] text-xs font-mono font-medium border border-[#E7E0D8] hover:border-[#252525]/30 transition-all cursor-pointer shadow-2xs hover:-translate-y-0.5"
-          >
-            <FileText className="w-3.5 h-3.5 text-[#252525]" />
-            <span>CV</span>
-          </a>
         </div>
 
-        {/* Mobile Hamburger Button + CV Quick Link */}
+        {/* Mobile Hamburger Button */}
         <div className="flex items-center gap-2 lg:hidden">
-          <a
-            href="/cv-syafiqa-zahroo.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Buka File CV PDF"
-            className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-[#F8D8C8] text-[#252525] text-xs font-mono font-medium border border-[#E7E0D8]"
-          >
-            <FileText className="w-3 h-3 text-[#252525]" />
-            <span>CV</span>
-          </a>
-
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle Navigation Menu"
@@ -129,16 +106,6 @@ export function Navbar() {
                 <span className="text-xs text-[#686868]">→</span>
               </a>
             ))}
-            <a
-              href="/cv-syafiqa-zahroo.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setMobileMenuOpen(false)}
-              className="mt-2 w-full py-2.5 px-4 rounded-lg bg-[#F8D8C8] text-[#252525] font-mono font-medium text-xs flex items-center justify-center gap-2 border border-[#E7E0D8]"
-            >
-              <FileText className="w-4 h-4" />
-              <span>Buka File PDF CV Syafiqa Zahroo</span>
-            </a>
           </nav>
         </div>
       )}
